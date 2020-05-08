@@ -2,5 +2,11 @@
 <h3>Dependency Injection</h3>
 
 <button (click)="displayProvider()">The provider</button>
-<p *ngIf="providerHidden" class="answer">The provider masp a token(that can be a string or a class) to a list of dependencies. It tells Angular how to create an object, given a token</p>
+<p *ngIf="providerHidden" class="answer">The provider maps a token(that can be a string or a class) to a list of dependencies. It tells Angular how to create an object, given a token</p>
+
+<button (click)="displayInjector()">The injector</button>
+<p *ngIf="injectorHidden" class="answer">The Injector hold a set of bindings and is responsible for resolving dependencies and injecting them when creating objects</p>
+
+<button (click)="">The dependency</button>
+<p>The Dependency is what's being injected</p>
 
