@@ -7,9 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class HelloComponent  {
   @Input() name: string;
-  providerHidden = false;
-
-  displayProvider() => {
-    this.providerHidden = !this.providerHidden;
-  }
+  
 }
