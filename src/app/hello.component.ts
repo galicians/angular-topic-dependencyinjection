@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'hello',
@@ -7,5 +8,10 @@ import { Component, Input } from '@angular/core';
 })
 export class HelloComponent  {
   @Input() name: string;
+
+  // Angular will inject the singleton instance of `UserService` here.
+  constructor(private userService: UserService) {
+    // empty because we don't have to do anything else!
+  }
   
 }
